@@ -45,6 +45,59 @@
         .img{
             width: 100%;
         }
+        h2{
+            font-family: "Avant Garde", Avantgarde,
+     "Century Gothic", CenturyGothic, AppleGothic,
+      sans-serif; font-size: 30px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 540;
+      line-height: 20px;
+      letter-spacing: 5px;
+        }
+        form{
+    color: grey;
+    text-align: center;
+    width: 500px;
+    left: 50%;
+    right: 50%;
+    transform: translate(107%)
+}
+fieldset{
+    border-color: rgb(202, 202, 202);
+    border-style: solid;
+    font-family: "Avant Garde", Avantgarde,
+    "Century Gothic", CenturyGothic, AppleGothic,
+    sans-serif; font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 25px;
+    display: block;
+    color: grey;
+}
+.button {
+  background-color: #bbbbbb; /* Green */
+  border: none;
+  color: rgb(236, 236, 236);
+  padding: 8px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Avant Garde", Avantgarde,
+    "Century Gothic", CenturyGothic, AppleGothic,
+    sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+.button:hover{
+    opacity: 0.7;
+}
     </style>
 </head>
 <body>
@@ -57,5 +110,27 @@
     <div>
         <img src="Brands.PNG" alt="brands" class="img" style="display: block; margin-left: auto; margin-right: auto;">
     </div>
+    <br><br><br><br><br><br>
+    <form>
+        <h2>Feedback Form:</h2>
+        <fieldset>
+        <label for="name">Name *</label> <br>
+        <input type="text" id="name" name="name" style="width: 340px;">
+        <br><br>
+        <label for="Email">Email *</label> <br>
+        <input type="text" id="email" name="email" style="width: 340px;">
+        <br><br>
+        <label for="Phone">Phone *</label> <br>
+        <input type="text" id="Phone" name="Phone" style="width: 340px;">
+        <br><br>
+        <label for="Subject">Subject *</label> <br>
+        <input type="text" id="Subject" name="Subject" style="width: 340px;">
+        <br><br>
+        <label for="Message">Message *</label> <br>
+        <textarea rows="10" cols="30" id="Message" name="Message" style="width: 340px;"></textarea>
+        <br>
+        <input type="submit" value="Submit" class="button">
+        </fieldset>
+    </form>
 </body>
 </html>
